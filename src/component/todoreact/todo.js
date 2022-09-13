@@ -77,13 +77,13 @@ const Todo = () => {
       <div className="main-div">
         <div className="child-div">
           <figure>
-            <img src="../images/vision.jpg" alt="todologo" />
+            <img src="../images/todo.svg" alt="todologo" />
             <figcaption>Sudip's TodoList  ✌</figcaption>
           </figure>
           <div className="addItems">
             <input
               type="text"
-              placeholder="✍   追加してください。"
+              placeholder="✍   スディプ追加してください。"
               className="form-control"
               value={inputdata}
               onChange={(event) => setInputData(event.target.value)}
