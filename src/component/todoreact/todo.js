@@ -83,7 +83,7 @@ const Todo = () => {
           <div className="addItems">
             <input
               type="text"
-              placeholder="✍   スディプ追加してください。"
+              placeholder="✍ 追加してください。"
               className="form-control"
               value={inputdata}
               onChange={(event) => setInputData(event.target.value)}
