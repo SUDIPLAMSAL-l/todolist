@@ -21,7 +21,7 @@ const Todo = () => {
   // add the items fucnction
   const addItem = () => {
     if (!inputdata) {
-      alert("plz fill the data");
+      alert("データを入力してください。");
     } else if (inputdata && toggleButton) {
       setItems(
         items.map((curElem) => {
@@ -77,13 +77,13 @@ const Todo = () => {
       <div className="main-div">
         <div className="child-div">
           <figure>
-            <img src="./images/todo.svg" alt="todologo" />
-            <figcaption>Add Your List Here ✌</figcaption>
+            <img src="../images/vision.jpg" alt="todologo" />
+            <figcaption>Sudip's TodoList  ✌</figcaption>
           </figure>
           <div className="addItems">
             <input
               type="text"
-              placeholder="✍ Add Item"
+              placeholder="✍   追加してください。"
               className="form-control"
               value={inputdata}
               onChange={(event) => setInputData(event.target.value)}
@@ -117,9 +117,9 @@ const Todo = () => {
           <div className="showItems">
             <button
               className="btn effect04"
-              data-sm-link-text="Remove All"
+              data-sm-link-text="全てをクリア"
               onClick={removeAll}>
-              <span> CHECK LIST</span>
+              <span> チェックリスト</span>
             </button>
           </div>
         </div>
